@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #444;
+}
+
+$base-color: #ccc;
+$edge-color: #efefef;
+$keyboard-color: #aaa;
+$edge: 20px;
+
+.pc {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  height: 600px;
+  width: 800px;
+  background: rgba(126, 69, 69, .8);
+  border-radius: $edge;
+  transform: translate(-50%, -50%);
+  &__head {
+    position: relative;
+    top: 15vh;
+    left: 15vw;
+    height: 220px;
+    width: 300px;
+    border-radius: $edge;
+    border: solid 5px $edge-color;
+    background: $base-color;
+    z-index: 10;
+    &__terminal {
+      position: relative;
+      top: 3.3vh;
+      left: 1.7vw;
+      height: 170px;
+      width: 250px;
+      background: #222;
+      border-radius: $edge;
+      &__text {
+        position: relative;
+        top: 1vh;
+        left: 0.5vw;
+        font-size: 0.1em;
+        color: rgb(48, 209, 88);
+      }
+    }
+  }
+  &__bottom {
+    position: relative;
+    top: 14.5vh;
+    left: 18.7vw;
+    height: 100px;
+    width: 300px;
+    border-radius: $edge;
+    border: solid 5px $edge-color;
+    background: $base-color;
+    transform: skew(45deg);
+    z-index: 0;
+    @for $i from 1 through 3 {
+      &__key--#{$i} {
+        position: relative;
+        top: #{$i + 2}vh;
+        left: 3vw;
+        height: 1px;
+        width: 230px;
+        background: $keyboard-color;
+      }
+    }
+    &__track {
+      position: relative;
+      top: 6.5vh;
+      left: 5.3vw;
+      height: 30px;
+      width: 150px;
+      border-radius: $edge - 5px;
+      border: solid $keyboard-color 1px;
+      background: #bbb;
+    }
+  }
+}
+
+.green {
+  color: greenyellow;
+}
