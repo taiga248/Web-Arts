@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #c2eeff;
+}
+.title {
+  position: fixed;
+  top: 45vh;
+  left: 50vw;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 100;
+}
+.deep {
+  animation: scroll-down 10s ease-in-out forwards;
+  &__area {
+    z-index: 0;
+    &--svg {
+      position: absolute;
+    }
+    &--1 {
+      height: 100vh;
+      background: #c2eeff;
+    }
+    &--2 {
+      height: 100vh;
+      background: #75a9ff;
+    }
+    &--3 {
+      height: 100vh;
+      background: #4689ff;
+    }
+    &--4 {
+      height: 100vh;
+      background: #005fff;
+    }
+    &--5 {
+      height: 100vh;
+      background: #0000dd;
+    }
+    &--6 {
+      height: 100vh;
+      background: #0000bb;
+    }
+    &--7 {
+      height: 150vh;
+      background: #000099;
+    }
+    &--8 {
+      height: 50vh;
+      background: #2d3740;
+    }
+  }
+}
+@keyframes scroll-down {
+  0% {
+    transform: translateY(95%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bubble {
+  @for $i from 1 through 6 {
+    .bubble--#{$i} {
+      position: fixed;
+      left: #{$i * 15}vw;
+      bottom: #{$i * random(50) + 300}px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: #c2eeff;
+      animation: bubble-eff #{$i + 1}s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes bubble-eff {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
