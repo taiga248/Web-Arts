@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.flower {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  @for $i from 1 through 20 {
+    &--#{$i} {
+      background: red;
+      transform: translate(random(100) * 10 + px, random(100) * 10 + px);
+      animation: flash 2s ease-in infinite;
+    }
+  }
+  @for $i from 21 through 40 {
+    &--#{$i} {
+      background: blue;
+      transform: translate(random(100) * 10 + px, random(100) * -10 + px);
+      animation: flash 2s ease-in infinite;
+    }
+  }
+  @for $i from 41 through 60 {
+    &--#{$i} {
+      background: yellow;
+      transform: translate(random(100) * -10 + px, random(100) * 10 + px);
+      animation: flash 2s ease-in infinite;
+    }
+  }
+  @for $i from 61 through 80 {
+    &--#{$i} {
+      background: white;
+      transform: translate(random(100) * -10 + px, random(100) * -10 + px);
+      animation: flash 2s ease-in infinite;
+    }
+  }
+}
+
+@keyframes flash {
+  from {
+    transform: translate(random(30) + %, random(30) + %);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.ring {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  height: 800px;
+  width: 800px;
+  transform: translate(-50%, -50%);
+  border: solid 30px #fff;
+  border-radius: 50%;
+  opacity: 0.3;
+  &--1 {
+    animation: xx 2s ease infinite;
+  }
+  &--2 {
+    animation: xx 2s ease-in-out reverse infinite;
+  }
+}
+
+@keyframes xx {
+  form {
+    height: 500px;
+    width: 500px;
+  }
+  to {
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+}
