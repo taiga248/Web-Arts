@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* variable */
+$hourSize: 170px;
+$minuteSize: 260px;
+$secondSize: 270px;
+
+$clockSize: 350px;
+$handRadius: 15px;
+/* -------- */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #4f4f4f;
+}
+
+.clock {
+  width: $clockSize;
+  height: $clockSize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #4f4f4f;
+  box-shadow: inset 19px 19px 38px #2f2f2f, inset -19px -19px 38px #6f6f6f;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    z-index: 100;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ffffff, #d7d7d7);
+    box-shadow: #000 1px 1px 3px;
+  }
+}
+
+.hour {
+  position: absolute;
+  width: $hourSize;
+  height: $hourSize;
+}
+.min {
+  position: absolute;
+  width: $minuteSize;
+  height: $minuteSize;
+}
+.sec {
+  position: absolute;
+  width: $secondSize;
+  height: $secondSize;
+}
+
+.hour-hand {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: $hourSize;
+  height: $hourSize;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: $hourSize/2;
+    border-radius: $handRadius;
+    background: #efefef;
+    box-shadow: #000 0.5px 0.5px 3px;
+  }
+}
+.minute-hand {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: $minuteSize;
+  height: $minuteSize;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: $minuteSize/2;
+    border-radius: $handRadius;
+    background: #efefef;
+    box-shadow: #000 0.5px 0.5px 3px;
+  }
+}
+.second-hand {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: $secondSize;
+  height: $secondSize;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: $secondSize/2;
+    border-radius: $handRadius;
+    background: #efefef;
+    box-shadow: #000 0.5px 0.5px 3px;
+  }
+}
