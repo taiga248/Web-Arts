@@ -8,19 +8,26 @@
     <title>clock</title>
   </head>
   <body>
-    <section>
-      <div class="clock">
-        <div class="hour">
-          <div class="hour-hand" id="hour-hand"></div>
+    <main>
+      <section class="clock">
+        <div class="clock__hour">
+          <div class="clock__hour__hand" id="hour-hand"></div>
         </div>
-        <div class="min">
-          <div class="minute-hand" id="minute-hand"></div>
+        <div class="clock__min">
+          <div class="clock__min__hand" id="minute-hand"></div>
         </div>
-        <div class="sec">
-          <div class="second-hand" id="second-hand"></div>
+        <div class="clock__sec">
+          <div class="clock__sec__hand" id="second-hand"></div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section>
+        <div class="timer">
+          <span id="timer__hour"></span>
+          :
+          <span id="timer__min"></span>
+        </div>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

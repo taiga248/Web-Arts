@@ -3,9 +3,7 @@ body {
   padding: 0;
 }
 
-/* variable */
-/* -------- */
-section {
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,8 +22,6 @@ section {
 }
 
 .clock {
-  width: 350px;
-  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,10 +31,98 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
-  background: #4f4f4f;
   -webkit-box-shadow: inset 19px 19px 38px #2f2f2f, inset -19px -19px 38px #6f6f6f;
           box-shadow: inset 19px 19px 38px #2f2f2f, inset -19px -19px 38px #6f6f6f;
+}
+
+.clock__hour {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+}
+
+.clock__hour__hand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 170px;
+  height: 170px;
+}
+
+.clock__hour__hand::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 85px;
+  border-radius: 15px;
+  background: #efefef;
+  -webkit-box-shadow: #000 0.5px 0.5px 3px;
+          box-shadow: #000 0.5px 0.5px 3px;
+}
+
+.clock__min {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+}
+
+.clock__min__hand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 260px;
+  height: 260px;
+}
+
+.clock__min__hand::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 130px;
+  border-radius: 15px;
+  background: #efefef;
+  -webkit-box-shadow: #000 0.5px 0.5px 3px;
+          box-shadow: #000 0.5px 0.5px 3px;
+}
+
+.clock__sec {
+  position: absolute;
+  width: 270px;
+  height: 270px;
+}
+
+.clock__sec__hand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 270px;
+  height: 270px;
+}
+
+.clock__sec__hand::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 135px;
+  border-radius: 15px;
+  background: #efefef;
+  -webkit-box-shadow: #000 0.5px 0.5px 3px;
+          box-shadow: #000 0.5px 0.5px 3px;
 }
 
 .clock::before {
@@ -53,90 +137,16 @@ section {
           box-shadow: #000 1px 1px 3px;
 }
 
-.hour {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-}
-
-.min {
-  position: absolute;
-  width: 260px;
-  height: 260px;
-}
-
-.sec {
-  position: absolute;
-  width: 270px;
-  height: 270px;
-}
-
-.hour-hand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  width: 170px;
-  height: 170px;
-}
-
-.hour-hand::before {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 85px;
-  border-radius: 15px;
-  background: #efefef;
-  -webkit-box-shadow: #000 0.5px 0.5px 3px;
-          box-shadow: #000 0.5px 0.5px 3px;
-}
-
-.minute-hand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  width: 260px;
-  height: 260px;
-}
-
-.minute-hand::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 130px;
-  border-radius: 15px;
-  background: #efefef;
-  -webkit-box-shadow: #000 0.5px 0.5px 3px;
-          box-shadow: #000 0.5px 0.5px 3px;
-}
-
-.second-hand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  width: 270px;
-  height: 270px;
-}
-
-.second-hand::before {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 135px;
-  border-radius: 15px;
-  background: #efefef;
-  -webkit-box-shadow: #000 0.5px 0.5px 3px;
-          box-shadow: #000 0.5px 0.5px 3px;
+.timer {
+  width: 500px;
+  text-align: center;
+  margin: 36px 0 0 0;
+  padding: 12px 24px;
+  font-size: 7em;
+  border-radius: 24px;
+  color: #4f4f4f;
+  text-shadow: 8px 8px 17px #202020, -8px -8px 17px #7e7e7e;
+  -webkit-box-shadow: inset 5px 5px 10px #292929, inset -5px -5px 10px #757575;
+          box-shadow: inset 5px 5px 10px #292929, inset -5px -5px 10px #757575;
 }
 /*# sourceMappingURL=style.css.map */

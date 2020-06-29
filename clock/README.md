@@ -1,5 +1,6 @@
 # Clock x Neumorphism
 
-<img width="1430" alt="clock" src="https://user-images.githubusercontent.com/38455912/85943299-23695900-b96a-11ea-834e-a79cdcc2d4ee.png">
+![clock_1](https://user-images.githubusercontent.com/38455912/85996804-a90d0780-ba43-11ea-96fa-75334c1ee190.gif)
 
-[Ref](https://www.youtube.com/watch?v=s9mGaRSRGZw&t=3s)
+
+I referred to [it](https://www.youtube.com/watch?v=s9mGaRSRGZw&t=3s) to implement the clock.
