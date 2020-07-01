@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+}
+#container {
+  width: 80vw;
+  margin: 0 auto;
+  opacity: 0;
+}
+.appearObject {
+  animation: appearObj 1s forwards;
+}
+
+$protrudingHeight: 10vh;
+$CircleTopPosition: 65vh;
+$dropHeight: 10vh;
+$appearBaseDelay: 1s;
+
+.appear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  &__line {
+    position: relative;
+    top: -$protrudingHeight;
+    left: 0;
+    width: 20%;
+    height: 100vh + $protrudingHeight;
+    border-radius: 0 8px 0 0;
+    &--1 {
+      animation: btm-to-top 1s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--2 {
+      animation: btm-to-top 1.1s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--3 {
+      animation: btm-to-top 1.2s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--4 {
+      animation: btm-to-top 1.3s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--5 {
+      animation: btm-to-top 1.4s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--6 {
+      animation: btm-to-top 1.5s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--7 {
+      animation: btm-to-top 1.6s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--8 {
+      animation: btm-to-top 1.7s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--9 {
+      animation: btm-to-top 1.8s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+    &--10 {
+      animation: btm-to-top 1.9s forwards;
+      animation-delay: $appearBaseDelay;
+    }
+  }
+  &__circle {
+    position: absolute;
+    top: $CircleTopPosition;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    &--1 {
+      border: solid #fff 0px;
+      animation: ripple 1s ease-in forwards;
+      animation-delay: $appearBaseDelay + 1.7s;
+    }
+    &--2 {
+      border: solid #fff 0px;
+      animation: ripple 1s ease-in forwards;
+      animation-delay: $appearBaseDelay + 2s;
+    }
+    &--3 {
+      border: solid #fff 0px;
+      animation: ripple 1s ease-in forwards;
+      animation-delay: $appearBaseDelay + 2.2s;
+    }
+    &--4 {
+      border: solid #fff 0px;
+      animation: ripple 1s ease-in forwards;
+      animation-delay: $appearBaseDelay + 2.4s;
+    }
+    &--5 {
+      border: solid #fff 0px;
+      animation: ripple 1s ease-in forwards;
+      animation-delay: $appearBaseDelay + 3.5s;
+    }
+    &--last {
+      background: #fff;
+      animation: rippleLast 1s ease-in forwards;
+      animation-delay: $appearBaseDelay + 4s;
+    }
+  }
+  &__drop {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 10px;
+    height: $dropHeight;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    &--1 {
+      animation: drop 0.4s ease-in-out forwards;
+      animation-delay: $appearBaseDelay + 1.3s;
+    }
+    &--2 {
+      animation: drop 0.4s ease-in-out forwards;
+      animation-delay: $appearBaseDelay + 3.1s;
+    }
+  }
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 4em;
+    font-weight: 200;
+  }
+}
+@keyframes appearObj {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ripple {
+  from {
+    border-width: 5px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  to {
+    width: 80vw;
+    height: 40vw;
+    opacity: 0;
+  }
+}
+@keyframes rippleLast {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 2600px;
+    height: 1300px;
+  }
+}
+@keyframes btm-to-top {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    background: green;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes drop {
+  to {
+    width: 1px;
+    height: 150px;
+    background: #fff;
+    opacity: 0;
+    transform: translateY($CircleTopPosition - $dropHeight * 2);
+  }
+}
