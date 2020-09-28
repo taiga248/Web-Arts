@@ -3,112 +3,119 @@ body {
   padding: 0;
 }
 
-$hourSize: 170px;
-$minuteSize: 260px;
-$secondSize: 270px;
-$clockSize: 350px;
-$handRadius: 15px;
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  background: #4f4f4f;
+@media screen and (max-width: 1199px) {
+  body {
+    display: none;
+  }
 }
+@media screen and (min-width: 1200px) {
+  $hourSize: 170px;
+  $minuteSize: 260px;
+  $secondSize: 270px;
+  $clockSize: 350px;
+  $handRadius: 15px;
 
-.clock {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: $clockSize;
-  height: $clockSize;
-  border-radius: 50%;
-  box-shadow: inset 19px 19px 38px #2f2f2f, inset -19px -19px 38px #6f6f6f;
-  &__hour {
-    position: absolute;
-    width: $hourSize;
-    height: $hourSize;
-    &__hand {
-      display: flex;
-      justify-content: center;
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #4f4f4f;
+  }
+
+  .clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $clockSize;
+    height: $clockSize;
+    border-radius: 50%;
+    box-shadow: inset 19px 19px 38px #2f2f2f, inset -19px -19px 38px #6f6f6f;
+    &__hour {
       position: absolute;
       width: $hourSize;
       height: $hourSize;
-      &::before {
-        content: "";
+      &__hand {
+        display: flex;
+        justify-content: center;
         position: absolute;
-        width: 6px;
-        height: $hourSize/2;
-        border-radius: $handRadius;
-        background: #efefef;
-        box-shadow: #000 0.5px 0.5px 3px;
+        width: $hourSize;
+        height: $hourSize;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: $hourSize/2;
+          border-radius: $handRadius;
+          background: #efefef;
+          box-shadow: #000 0.5px 0.5px 3px;
+        }
       }
     }
-  }
-  &__min {
-    position: absolute;
-    width: $minuteSize;
-    height: $minuteSize;
-    &__hand {
-      display: flex;
-      justify-content: center;
+    &__min {
       position: absolute;
       width: $minuteSize;
       height: $minuteSize;
-      &::before {
-        content: "";
+      &__hand {
+        display: flex;
+        justify-content: center;
         position: absolute;
-        width: 4px;
-        height: $minuteSize/2;
-        border-radius: $handRadius;
-        background: #efefef;
-        box-shadow: #000 0.5px 0.5px 3px;
+        width: $minuteSize;
+        height: $minuteSize;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: $minuteSize/2;
+          border-radius: $handRadius;
+          background: #efefef;
+          box-shadow: #000 0.5px 0.5px 3px;
+        }
       }
     }
-  }
-  &__sec {
-    position: absolute;
-    width: $secondSize;
-    height: $secondSize;
-    &__hand {
-      display: flex;
-      justify-content: center;
+    &__sec {
       position: absolute;
       width: $secondSize;
       height: $secondSize;
-      &::before {
-        content: "";
+      &__hand {
+        display: flex;
+        justify-content: center;
         position: absolute;
-        width: 2px;
-        height: $secondSize/2;
-        border-radius: $handRadius;
-        background: #efefef;
-        box-shadow: #000 0.5px 0.5px 3px;
+        width: $secondSize;
+        height: $secondSize;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 2px;
+          height: $secondSize/2;
+          border-radius: $handRadius;
+          background: #efefef;
+          box-shadow: #000 0.5px 0.5px 3px;
+        }
       }
     }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      z-index: 100;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #ffffff, #d7d7d7);
+      box-shadow: #000 1px 1px 3px;
+    }
   }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    z-index: 100;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #ffffff, #d7d7d7);
-    box-shadow: #000 1px 1px 3px;
-  }
-}
 
-.timer {
-  width: 500px;
-  text-align: center;
-  margin: 36px 0 0 0;
-  padding: 12px 24px;
-  font-size: 7em;
-  border-radius: 24px;
-  color: #4f4f4f;
-  text-shadow: 8px 8px 17px #202020, -8px -8px 17px #7e7e7e;
-  box-shadow: inset 5px 5px 10px #292929, inset -5px -5px 10px #757575;
+  .timer {
+    width: 500px;
+    text-align: center;
+    margin: 36px 0 0 0;
+    padding: 12px 24px;
+    font-size: 7em;
+    border-radius: 24px;
+    color: #4f4f4f;
+    text-shadow: 8px 8px 17px #202020, -8px -8px 17px #7e7e7e;
+    box-shadow: inset 5px 5px 10px #292929, inset -5px -5px 10px #757575;
+  }
 }

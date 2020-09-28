@@ -1,726 +1,646 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #000;
-  overflow: hidden;
-}
-
-.flower {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-
-.flower--1 {
-  background: red;
-  -webkit-transform: translate(930px, 100px);
-          transform: translate(930px, 100px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--2 {
-  background: red;
-  -webkit-transform: translate(740px, 630px);
-          transform: translate(740px, 630px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--3 {
-  background: red;
-  -webkit-transform: translate(880px, 840px);
-          transform: translate(880px, 840px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--4 {
-  background: red;
-  -webkit-transform: translate(250px, 30px);
-          transform: translate(250px, 30px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--5 {
-  background: red;
-  -webkit-transform: translate(390px, 810px);
-          transform: translate(390px, 810px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--6 {
-  background: red;
-  -webkit-transform: translate(520px, 630px);
-          transform: translate(520px, 630px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--7 {
-  background: red;
-  -webkit-transform: translate(200px, 460px);
-          transform: translate(200px, 460px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--8 {
-  background: red;
-  -webkit-transform: translate(670px, 230px);
-          transform: translate(670px, 230px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--9 {
-  background: red;
-  -webkit-transform: translate(280px, 280px);
-          transform: translate(280px, 280px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--10 {
-  background: red;
-  -webkit-transform: translate(700px, 690px);
-          transform: translate(700px, 690px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--11 {
-  background: red;
-  -webkit-transform: translate(300px, 60px);
-          transform: translate(300px, 60px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--12 {
-  background: red;
-  -webkit-transform: translate(720px, 420px);
-          transform: translate(720px, 420px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--13 {
-  background: red;
-  -webkit-transform: translate(120px, 410px);
-          transform: translate(120px, 410px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--14 {
-  background: red;
-  -webkit-transform: translate(150px, 450px);
-          transform: translate(150px, 450px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--15 {
-  background: red;
-  -webkit-transform: translate(370px, 990px);
-          transform: translate(370px, 990px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--16 {
-  background: red;
-  -webkit-transform: translate(560px, 90px);
-          transform: translate(560px, 90px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--17 {
-  background: red;
-  -webkit-transform: translate(650px, 380px);
-          transform: translate(650px, 380px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--18 {
-  background: red;
-  -webkit-transform: translate(630px, 580px);
-          transform: translate(630px, 580px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--19 {
-  background: red;
-  -webkit-transform: translate(200px, 950px);
-          transform: translate(200px, 950px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--20 {
-  background: red;
-  -webkit-transform: translate(730px, 230px);
-          transform: translate(730px, 230px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--21 {
-  background: blue;
-  -webkit-transform: translate(730px, -620px);
-          transform: translate(730px, -620px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--22 {
-  background: blue;
-  -webkit-transform: translate(100px, -250px);
-          transform: translate(100px, -250px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--23 {
-  background: blue;
-  -webkit-transform: translate(640px, -50px);
-          transform: translate(640px, -50px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--24 {
-  background: blue;
-  -webkit-transform: translate(580px, -120px);
-          transform: translate(580px, -120px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--25 {
-  background: blue;
-  -webkit-transform: translate(280px, -950px);
-          transform: translate(280px, -950px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--26 {
-  background: blue;
-  -webkit-transform: translate(200px, -200px);
-          transform: translate(200px, -200px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--27 {
-  background: blue;
-  -webkit-transform: translate(360px, -460px);
-          transform: translate(360px, -460px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--28 {
-  background: blue;
-  -webkit-transform: translate(230px, -580px);
-          transform: translate(230px, -580px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--29 {
-  background: blue;
-  -webkit-transform: translate(690px, -750px);
-          transform: translate(690px, -750px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--30 {
-  background: blue;
-  -webkit-transform: translate(570px, -900px);
-          transform: translate(570px, -900px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--31 {
-  background: blue;
-  -webkit-transform: translate(720px, -230px);
-          transform: translate(720px, -230px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--32 {
-  background: blue;
-  -webkit-transform: translate(540px, -640px);
-          transform: translate(540px, -640px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--33 {
-  background: blue;
-  -webkit-transform: translate(40px, -150px);
-          transform: translate(40px, -150px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--34 {
-  background: blue;
-  -webkit-transform: translate(120px, -50px);
-          transform: translate(120px, -50px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--35 {
-  background: blue;
-  -webkit-transform: translate(10px, -80px);
-          transform: translate(10px, -80px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--36 {
-  background: blue;
-  -webkit-transform: translate(10px, -100px);
-          transform: translate(10px, -100px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--37 {
-  background: blue;
-  -webkit-transform: translate(40px, -470px);
-          transform: translate(40px, -470px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--38 {
-  background: blue;
-  -webkit-transform: translate(510px, -80px);
-          transform: translate(510px, -80px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--39 {
-  background: blue;
-  -webkit-transform: translate(760px, -20px);
-          transform: translate(760px, -20px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--40 {
-  background: blue;
-  -webkit-transform: translate(310px, -50px);
-          transform: translate(310px, -50px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--41 {
-  background: yellow;
-  -webkit-transform: translate(-600px, 140px);
-          transform: translate(-600px, 140px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--42 {
-  background: yellow;
-  -webkit-transform: translate(-510px, 570px);
-          transform: translate(-510px, 570px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--43 {
-  background: yellow;
-  -webkit-transform: translate(-810px, 200px);
-          transform: translate(-810px, 200px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--44 {
-  background: yellow;
-  -webkit-transform: translate(-550px, 70px);
-          transform: translate(-550px, 70px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--45 {
-  background: yellow;
-  -webkit-transform: translate(-780px, 470px);
-          transform: translate(-780px, 470px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--46 {
-  background: yellow;
-  -webkit-transform: translate(-250px, 110px);
-          transform: translate(-250px, 110px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--47 {
-  background: yellow;
-  -webkit-transform: translate(-70px, 370px);
-          transform: translate(-70px, 370px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--48 {
-  background: yellow;
-  -webkit-transform: translate(-370px, 200px);
-          transform: translate(-370px, 200px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--49 {
-  background: yellow;
-  -webkit-transform: translate(-720px, 400px);
-          transform: translate(-720px, 400px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--50 {
-  background: yellow;
-  -webkit-transform: translate(-850px, 930px);
-          transform: translate(-850px, 930px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--51 {
-  background: yellow;
-  -webkit-transform: translate(-580px, 990px);
-          transform: translate(-580px, 990px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--52 {
-  background: yellow;
-  -webkit-transform: translate(-160px, 610px);
-          transform: translate(-160px, 610px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--53 {
-  background: yellow;
-  -webkit-transform: translate(-830px, 480px);
-          transform: translate(-830px, 480px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--54 {
-  background: yellow;
-  -webkit-transform: translate(-30px, 200px);
-          transform: translate(-30px, 200px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--55 {
-  background: yellow;
-  -webkit-transform: translate(-590px, 370px);
-          transform: translate(-590px, 370px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--56 {
-  background: yellow;
-  -webkit-transform: translate(-570px, 90px);
-          transform: translate(-570px, 90px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--57 {
-  background: yellow;
-  -webkit-transform: translate(-130px, 630px);
-          transform: translate(-130px, 630px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--58 {
-  background: yellow;
-  -webkit-transform: translate(-820px, 760px);
-          transform: translate(-820px, 760px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--59 {
-  background: yellow;
-  -webkit-transform: translate(-820px, 920px);
-          transform: translate(-820px, 920px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--60 {
-  background: yellow;
-  -webkit-transform: translate(-280px, 170px);
-          transform: translate(-280px, 170px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--61 {
-  background: white;
-  -webkit-transform: translate(-200px, -640px);
-          transform: translate(-200px, -640px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--62 {
-  background: white;
-  -webkit-transform: translate(-130px, -80px);
-          transform: translate(-130px, -80px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--63 {
-  background: white;
-  -webkit-transform: translate(-60px, -190px);
-          transform: translate(-60px, -190px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--64 {
-  background: white;
-  -webkit-transform: translate(-820px, -340px);
-          transform: translate(-820px, -340px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--65 {
-  background: white;
-  -webkit-transform: translate(-510px, -230px);
-          transform: translate(-510px, -230px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--66 {
-  background: white;
-  -webkit-transform: translate(-240px, -630px);
-          transform: translate(-240px, -630px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--67 {
-  background: white;
-  -webkit-transform: translate(-380px, -570px);
-          transform: translate(-380px, -570px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--68 {
-  background: white;
-  -webkit-transform: translate(-390px, -810px);
-          transform: translate(-390px, -810px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--69 {
-  background: white;
-  -webkit-transform: translate(-780px, -130px);
-          transform: translate(-780px, -130px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--70 {
-  background: white;
-  -webkit-transform: translate(-10px, -400px);
-          transform: translate(-10px, -400px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--71 {
-  background: white;
-  -webkit-transform: translate(-850px, -530px);
-          transform: translate(-850px, -530px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--72 {
-  background: white;
-  -webkit-transform: translate(-780px, -990px);
-          transform: translate(-780px, -990px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--73 {
-  background: white;
-  -webkit-transform: translate(-120px, -970px);
-          transform: translate(-120px, -970px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--74 {
-  background: white;
-  -webkit-transform: translate(-360px, -270px);
-          transform: translate(-360px, -270px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--75 {
-  background: white;
-  -webkit-transform: translate(-180px, -120px);
-          transform: translate(-180px, -120px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--76 {
-  background: white;
-  -webkit-transform: translate(-750px, -60px);
-          transform: translate(-750px, -60px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--77 {
-  background: white;
-  -webkit-transform: translate(-380px, -760px);
-          transform: translate(-380px, -760px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--78 {
-  background: white;
-  -webkit-transform: translate(-170px, -950px);
-          transform: translate(-170px, -950px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--79 {
-  background: white;
-  -webkit-transform: translate(-730px, -120px);
-          transform: translate(-730px, -120px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-.flower--80 {
-  background: white;
-  -webkit-transform: translate(-830px, -530px);
-          transform: translate(-830px, -530px);
-  -webkit-animation: flash 2s ease-in infinite;
-          animation: flash 2s ease-in infinite;
-}
-
-@-webkit-keyframes flash {
-  from {
-    -webkit-transform: translate(22%, 30%);
-            transform: translate(22%, 30%);
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
+@media screen and (max-width: 1199px) {
+  body {
+    display: none;
   }
 }
 
-@keyframes flash {
-  from {
-    -webkit-transform: translate(22%, 30%);
-            transform: translate(22%, 30%);
-    opacity: 1;
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
   }
-  to {
-    opacity: 0;
+  .flower {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
   }
-}
-
-.ring {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  height: 800px;
-  width: 800px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: solid 30px #fff;
-  border-radius: 50%;
-  opacity: 0.3;
-}
-
-.ring--1 {
-  -webkit-animation: xx 2s ease infinite;
-          animation: xx 2s ease infinite;
-}
-
-.ring--2 {
-  animation: xx 2s ease-in-out reverse infinite;
-}
-
-@-webkit-keyframes xx {
-  form {
-    height: 500px;
-    width: 500px;
+  .flower--1 {
+    background: red;
+    -webkit-transform: translate(910px, 680px);
+            transform: translate(910px, 680px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
   }
-  to {
-    height: 0;
-    width: 0;
-    opacity: 0;
+  .flower--2 {
+    background: red;
+    -webkit-transform: translate(280px, 60px);
+            transform: translate(280px, 60px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
   }
-}
-
-@keyframes xx {
-  form {
-    height: 500px;
-    width: 500px;
+  .flower--3 {
+    background: red;
+    -webkit-transform: translate(650px, 970px);
+            transform: translate(650px, 970px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
   }
-  to {
-    height: 0;
-    width: 0;
-    opacity: 0;
+  .flower--4 {
+    background: red;
+    -webkit-transform: translate(530px, 640px);
+            transform: translate(530px, 640px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--5 {
+    background: red;
+    -webkit-transform: translate(470px, 800px);
+            transform: translate(470px, 800px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--6 {
+    background: red;
+    -webkit-transform: translate(830px, 200px);
+            transform: translate(830px, 200px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--7 {
+    background: red;
+    -webkit-transform: translate(700px, 230px);
+            transform: translate(700px, 230px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--8 {
+    background: red;
+    -webkit-transform: translate(850px, 40px);
+            transform: translate(850px, 40px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--9 {
+    background: red;
+    -webkit-transform: translate(1000px, 950px);
+            transform: translate(1000px, 950px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--10 {
+    background: red;
+    -webkit-transform: translate(990px, 660px);
+            transform: translate(990px, 660px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--11 {
+    background: red;
+    -webkit-transform: translate(910px, 300px);
+            transform: translate(910px, 300px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--12 {
+    background: red;
+    -webkit-transform: translate(200px, 580px);
+            transform: translate(200px, 580px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--13 {
+    background: red;
+    -webkit-transform: translate(940px, 190px);
+            transform: translate(940px, 190px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--14 {
+    background: red;
+    -webkit-transform: translate(690px, 250px);
+            transform: translate(690px, 250px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--15 {
+    background: red;
+    -webkit-transform: translate(890px, 100px);
+            transform: translate(890px, 100px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--16 {
+    background: red;
+    -webkit-transform: translate(840px, 530px);
+            transform: translate(840px, 530px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--17 {
+    background: red;
+    -webkit-transform: translate(680px, 320px);
+            transform: translate(680px, 320px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--18 {
+    background: red;
+    -webkit-transform: translate(710px, 630px);
+            transform: translate(710px, 630px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--19 {
+    background: red;
+    -webkit-transform: translate(660px, 490px);
+            transform: translate(660px, 490px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--20 {
+    background: red;
+    -webkit-transform: translate(60px, 710px);
+            transform: translate(60px, 710px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--21 {
+    background: blue;
+    -webkit-transform: translate(950px, -890px);
+            transform: translate(950px, -890px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--22 {
+    background: blue;
+    -webkit-transform: translate(800px, -590px);
+            transform: translate(800px, -590px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--23 {
+    background: blue;
+    -webkit-transform: translate(910px, -580px);
+            transform: translate(910px, -580px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--24 {
+    background: blue;
+    -webkit-transform: translate(470px, -680px);
+            transform: translate(470px, -680px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--25 {
+    background: blue;
+    -webkit-transform: translate(750px, -810px);
+            transform: translate(750px, -810px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--26 {
+    background: blue;
+    -webkit-transform: translate(420px, -170px);
+            transform: translate(420px, -170px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--27 {
+    background: blue;
+    -webkit-transform: translate(50px, -30px);
+            transform: translate(50px, -30px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--28 {
+    background: blue;
+    -webkit-transform: translate(270px, -210px);
+            transform: translate(270px, -210px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--29 {
+    background: blue;
+    -webkit-transform: translate(170px, -100px);
+            transform: translate(170px, -100px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--30 {
+    background: blue;
+    -webkit-transform: translate(190px, -160px);
+            transform: translate(190px, -160px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--31 {
+    background: blue;
+    -webkit-transform: translate(670px, -800px);
+            transform: translate(670px, -800px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--32 {
+    background: blue;
+    -webkit-transform: translate(430px, -620px);
+            transform: translate(430px, -620px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--33 {
+    background: blue;
+    -webkit-transform: translate(720px, -890px);
+            transform: translate(720px, -890px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--34 {
+    background: blue;
+    -webkit-transform: translate(570px, -100px);
+            transform: translate(570px, -100px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--35 {
+    background: blue;
+    -webkit-transform: translate(830px, -790px);
+            transform: translate(830px, -790px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--36 {
+    background: blue;
+    -webkit-transform: translate(930px, -20px);
+            transform: translate(930px, -20px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--37 {
+    background: blue;
+    -webkit-transform: translate(310px, -210px);
+            transform: translate(310px, -210px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--38 {
+    background: blue;
+    -webkit-transform: translate(610px, -340px);
+            transform: translate(610px, -340px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--39 {
+    background: blue;
+    -webkit-transform: translate(30px, -960px);
+            transform: translate(30px, -960px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--40 {
+    background: blue;
+    -webkit-transform: translate(930px, -990px);
+            transform: translate(930px, -990px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--41 {
+    background: yellow;
+    -webkit-transform: translate(-140px, 630px);
+            transform: translate(-140px, 630px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--42 {
+    background: yellow;
+    -webkit-transform: translate(-610px, 790px);
+            transform: translate(-610px, 790px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--43 {
+    background: yellow;
+    -webkit-transform: translate(-160px, 810px);
+            transform: translate(-160px, 810px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--44 {
+    background: yellow;
+    -webkit-transform: translate(-790px, 710px);
+            transform: translate(-790px, 710px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--45 {
+    background: yellow;
+    -webkit-transform: translate(-850px, 930px);
+            transform: translate(-850px, 930px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--46 {
+    background: yellow;
+    -webkit-transform: translate(-510px, 660px);
+            transform: translate(-510px, 660px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--47 {
+    background: yellow;
+    -webkit-transform: translate(-410px, 710px);
+            transform: translate(-410px, 710px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--48 {
+    background: yellow;
+    -webkit-transform: translate(-780px, 930px);
+            transform: translate(-780px, 930px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--49 {
+    background: yellow;
+    -webkit-transform: translate(-350px, 130px);
+            transform: translate(-350px, 130px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--50 {
+    background: yellow;
+    -webkit-transform: translate(-440px, 340px);
+            transform: translate(-440px, 340px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--51 {
+    background: yellow;
+    -webkit-transform: translate(-100px, 620px);
+            transform: translate(-100px, 620px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--52 {
+    background: yellow;
+    -webkit-transform: translate(-910px, 990px);
+            transform: translate(-910px, 990px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--53 {
+    background: yellow;
+    -webkit-transform: translate(-820px, 860px);
+            transform: translate(-820px, 860px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--54 {
+    background: yellow;
+    -webkit-transform: translate(-600px, 890px);
+            transform: translate(-600px, 890px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--55 {
+    background: yellow;
+    -webkit-transform: translate(-730px, 770px);
+            transform: translate(-730px, 770px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--56 {
+    background: yellow;
+    -webkit-transform: translate(-520px, 480px);
+            transform: translate(-520px, 480px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--57 {
+    background: yellow;
+    -webkit-transform: translate(-200px, 200px);
+            transform: translate(-200px, 200px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--58 {
+    background: yellow;
+    -webkit-transform: translate(-360px, 140px);
+            transform: translate(-360px, 140px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--59 {
+    background: yellow;
+    -webkit-transform: translate(-490px, 510px);
+            transform: translate(-490px, 510px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--60 {
+    background: yellow;
+    -webkit-transform: translate(-770px, 640px);
+            transform: translate(-770px, 640px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--61 {
+    background: white;
+    -webkit-transform: translate(-810px, -830px);
+            transform: translate(-810px, -830px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--62 {
+    background: white;
+    -webkit-transform: translate(-550px, -190px);
+            transform: translate(-550px, -190px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--63 {
+    background: white;
+    -webkit-transform: translate(-480px, -720px);
+            transform: translate(-480px, -720px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--64 {
+    background: white;
+    -webkit-transform: translate(-310px, -180px);
+            transform: translate(-310px, -180px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--65 {
+    background: white;
+    -webkit-transform: translate(-730px, -930px);
+            transform: translate(-730px, -930px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--66 {
+    background: white;
+    -webkit-transform: translate(-110px, -600px);
+            transform: translate(-110px, -600px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--67 {
+    background: white;
+    -webkit-transform: translate(-920px, -930px);
+            transform: translate(-920px, -930px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--68 {
+    background: white;
+    -webkit-transform: translate(-630px, -1000px);
+            transform: translate(-630px, -1000px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--69 {
+    background: white;
+    -webkit-transform: translate(-940px, -490px);
+            transform: translate(-940px, -490px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--70 {
+    background: white;
+    -webkit-transform: translate(-580px, -830px);
+            transform: translate(-580px, -830px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--71 {
+    background: white;
+    -webkit-transform: translate(-650px, -520px);
+            transform: translate(-650px, -520px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--72 {
+    background: white;
+    -webkit-transform: translate(-990px, -120px);
+            transform: translate(-990px, -120px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--73 {
+    background: white;
+    -webkit-transform: translate(-690px, -990px);
+            transform: translate(-690px, -990px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--74 {
+    background: white;
+    -webkit-transform: translate(-740px, -70px);
+            transform: translate(-740px, -70px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--75 {
+    background: white;
+    -webkit-transform: translate(-320px, -750px);
+            transform: translate(-320px, -750px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--76 {
+    background: white;
+    -webkit-transform: translate(-970px, -300px);
+            transform: translate(-970px, -300px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--77 {
+    background: white;
+    -webkit-transform: translate(-720px, -130px);
+            transform: translate(-720px, -130px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--78 {
+    background: white;
+    -webkit-transform: translate(-300px, -30px);
+            transform: translate(-300px, -30px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--79 {
+    background: white;
+    -webkit-transform: translate(-720px, -310px);
+            transform: translate(-720px, -310px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  .flower--80 {
+    background: white;
+    -webkit-transform: translate(-240px, -610px);
+            transform: translate(-240px, -610px);
+    -webkit-animation: flash 2s ease-in infinite;
+            animation: flash 2s ease-in infinite;
+  }
+  @-webkit-keyframes flash {
+    from {
+      -webkit-transform: translate(13%, 19%);
+              transform: translate(13%, 19%);
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes flash {
+    from {
+      -webkit-transform: translate(13%, 19%);
+              transform: translate(13%, 19%);
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .ring {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 800px;
+    width: 800px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    border: solid 30px #fff;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  .ring--1 {
+    -webkit-animation: xx 2s ease infinite;
+            animation: xx 2s ease infinite;
+  }
+  .ring--2 {
+    animation: xx 2s ease-in-out reverse infinite;
+  }
+  @-webkit-keyframes xx {
+    form {
+      height: 500px;
+      width: 500px;
+    }
+    to {
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+  @keyframes xx {
+    form {
+      height: 500px;
+      width: 500px;
+    }
+    to {
+      height: 0;
+      width: 0;
+      opacity: 0;
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */

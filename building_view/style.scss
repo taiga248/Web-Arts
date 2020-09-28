@@ -3,108 +3,115 @@ body {
   padding: 0;
   overflow: hidden;
 }
-svg {
-  vertical-align: bottom;
+@media screen and (max-width: 1199px) {
+  body {
+    display: none;
+  }
 }
+@media screen and (min-width: 1200px) {
+  svg {
+    vertical-align: bottom;
+  }
 
-$base-height: 250px;
-$stash-white-space: -300px;
-.deep-space {
-  background: #000;
-  &__base {
-    height: $base-height;
-  }
-}
-.space {
-  transform: translateY($stash-white-space);
-  &__base {
-    height: $base-height;
-    background: #000036;
-  }
-}
-.night {
-  transform: translateY($stash-white-space * 2.5);
-}
-.building {
-  transform: translateY($stash-white-space * 2.5);
-  background: #000066;
-  &__svg {
-    vertical-align: 3px;
-    &--under {
-      opacity: 0.7;
-      filter: blur(4px);
-      transform: rotateX(180deg);
+  $base-height: 250px;
+  $stash-white-space: -300px;
+  .deep-space {
+    background: #000;
+    &__base {
+      height: $base-height;
     }
   }
-}
+  .space {
+    transform: translateY($stash-white-space);
+    &__base {
+      height: $base-height;
+      background: #000036;
+    }
+  }
+  .night {
+    transform: translateY($stash-white-space * 2.5);
+  }
+  .building {
+    transform: translateY($stash-white-space * 2.5);
+    background: #000066;
+    &__svg {
+      vertical-align: 3px;
+      &--under {
+        opacity: 0.7;
+        filter: blur(4px);
+        transform: rotateX(180deg);
+      }
+    }
+  }
 
-$circle-size: 110px;
-.light {
-  position: fixed;
-  width: $circle-size;
-  height: $circle-size;
-  background: #fff;
-  opacity: 0.4;
-  border-radius: 50%;
-  margin: 1%;
-  filter: blur(5px);
-  z-index: 10;
-  &--1 {
-    top: 0;
-    left: 0;
+  $circle-size: 110px;
+  .light {
+    position: fixed;
+    width: $circle-size;
+    height: $circle-size;
+    background: #fff;
+    opacity: 0.4;
+    border-radius: 50%;
+    margin: 1%;
+    filter: blur(5px);
+    z-index: 10;
+    &--1 {
+      top: 0;
+      left: 0;
+    }
+    &--2 {
+      bottom: 0;
+      left: 0;
+    }
+    &--3 {
+      top: 0;
+      right: 0;
+    }
+    &--4 {
+      bottom: 0;
+      right: 0;
+    }
   }
-  &--2 {
-    bottom: 0;
-    left: 0;
-  }
-  &--3 {
-    top: 0;
-    right: 0;
-  }
-  &--4 {
-    bottom: 0;
-    right: 0;
-  }
-}
 
-// 線の太さ
-$line: 20px;
-// 上下の線
-$tb-vh: 7vh;
-$tb-vw: 10vw;
-$tb-width: 80%;
-// 左右の線
-$rl-vh: 17.5vh;
-$rl-vw: 4vw;
-$rl-height: 65%;
-.line {
-  filter: blur(5px);
-  position: fixed;
-  background: #fff;
-  opacity: 0.4;
-  z-index: 20;
-  &--t {
-    top: $tb-vh;
-    left: $tb-vw;
-    width: $tb-width;
-    height: $line;
-  }
-  &--r {
-    top: $rl-vh;
-    right: $rl-vw;
-    width: $line;
-    height: $rl-height;
-  }
-  &--b {
-    bottom: $tb-vh;
-    left: $tb-vw;
-    width: $tb-width;
-    height: $line;
-  }
-  &--l {
-    top: $rl-vh;
-    left: $rl-vw;
-    width: $line;
-    height: $rl-height;
+  // 線の太さ
+  $line: 20px;
+  // 上下の線
+  $tb-vh: 7vh;
+  $tb-vw: 10vw;
+  $tb-width: 80%;
+  // 左右の線
+  $rl-vh: 17.5vh;
+  $rl-vw: 4vw;
+  $rl-height: 65%;
+  .line {
+    filter: blur(5px);
+    position: fixed;
+    background: #fff;
+    opacity: 0.4;
+    z-index: 20;
+    &--t {
+      top: $tb-vh;
+      left: $tb-vw;
+      width: $tb-width;
+      height: $line;
+    }
+    &--r {
+      top: $rl-vh;
+      right: $rl-vw;
+      width: $line;
+      height: $rl-height;
+    }
+    &--b {
+      bottom: $tb-vh;
+      left: $tb-vw;
+      width: $tb-width;
+      height: $line;
+    }
+    &--l {
+      top: $rl-vh;
+      left: $rl-vw;
+      width: $line;
+      height: $rl-height;
+    }
   }
 }
