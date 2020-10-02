@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     background: #000044;
+    overflow: hidden;
   }
   .mountain__svg {
     position: absolute;
